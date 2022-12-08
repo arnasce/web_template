@@ -1,3 +1,6 @@
+<?php
+    include_once '/var/www/html/includes/db_connection.php'
+?>
 <!DOCTYPE html>
 <html itemscope lang="lt" xml:lang="lt" itemtype="http://schema.org/Blog">
 <head>
@@ -71,7 +74,7 @@ return false;});});
     <h4 class="center gray-text">Duomenys</h4>
     <div class="container">
         <div class="row">
-            <?php echo "ID" . str_repeat("&nbsp;", 7) . "IP adresas" . str_repeat("&nbsp;", 10) . "Paspaudimo data"?>
+            <?php echo "ID" . str_repeat("&nbsp;", 7) . "IP adresas" . str_repeat("&nbsp;", 10) . "Paspaudimo data";?>
             <?php foreach($fetched as $entry){ ?>
                 <div><?php echo $entry['id'] . str_repeat("&nbsp;", 5) . $entry['client_ip_address'] . str_repeat("&nbsp;", 5) . $entry['reg_date']; ?></div>
             <?php } ?>
