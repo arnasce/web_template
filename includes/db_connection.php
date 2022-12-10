@@ -1,9 +1,9 @@
 <?php
 
-    $servername = "10.0.1.157";
-    $username = "wpuser";
-    $password = "password";
-    $dbname = "wordpress";
+    $servername = "";
+    $username = "";
+    $password = "";
+    $dbname = "";
 
     $conn = mysqli_connect($servername, $username, $password, $dbname);
 
