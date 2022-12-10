@@ -28,4 +28,4 @@
     $sql = "INSERT INTO client_records (client_ip_address) VALUES ('$user_ip');";
     mysqli_query($conn, $sql);
 
-    header("Location: tel:+123456789");
+    header("Location: skype:arnis296?call");
